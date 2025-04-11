@@ -87,6 +87,7 @@ Scanner scanner = new Scanner(System.in);
         do {
             System.out.print("Enter a sentence that contains the word 'Java': ");
             input = scanner.nextLine();
+            scanner.close();
         }
         while (!input.contains("Java"));
         System.out.println("Thank you!");
@@ -118,5 +119,6 @@ Scanner scanner = new Scanner(System.in);
 
     }
 }     
-      // i dont know why the scanner is giving me "resource leak" PLEASE SPARE ME IT WORKS IT WORKS PLEASE    
+      // i dont know why the scanner is giving me "resource leak" PLEASE SPARE ME IT WORKS IT WORKS PLEASE 
+// fixed
 
